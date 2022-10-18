@@ -50,7 +50,7 @@ Destreamer takes a [honeybadger](https://www.youtube.com/watch?v=4r7wHMg5Yjg) ap
 Make sure you use the right script (`.sh`, `.ps1` or `.cmd`) and escape char (if using line breaks) for your shell.
 PowerShell uses a backtick [ **`** ] and cmd.exe uses a caret [ **^** ].
 
-Note that destreamer won't run in an elevated (Administrator/root) shell. Running inside **Cygwin/MinGW/MSYS** may also fail, please use **cmd.exe** or **PowerShell** if you're on Windows.
+Note that destreamer won't run in an elevated (Administrator/root) shell. Running inside **Cygwin/MinGW/MSYS** may also fail, please use **cmd.exe** or **PowerShell** if you're on Windows (if you're using an Administrator account, you can force a non-elevated cmd instance by running `runas /trustlevel:0x20000 cmd`).
 
 **WSL** (Windows Subsystem for Linux) is not supported as it can't easily pop up a browser window. It *may* work by installing an X Window server (like [Xming][xming]) and exporting the default display to it (`export DISPLAY=:0`) before running destreamer. See [this issue for more on WSL v1 and v2][wsl].
 
