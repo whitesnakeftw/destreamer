@@ -80,7 +80,7 @@ export const argv: any = yargs.options({
     },
     selectQuality: {
         alias: 'q',
-        describe: 'Select the quality with a number 1 (worst) trough 10 (best), 0 prompt the user for each video',
+        describe: 'Select the quality with a number 1 (worst) through 10 (best), 0 prompt the user for each video',
         default: 10,
         type: 'number',
         demandOption: false
